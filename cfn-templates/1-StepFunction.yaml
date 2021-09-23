@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: PlaceHolder
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label: Network Configuration
+        Parameters:
+          - placeholder
+
+    ParameterLabels:
+      placeholder:
+        default: Place Holder
+
+Parameters:
+  placeholder:
+    Default: PlaceHolder
+    Description: Placeholder
+    Type: String
+
+Resources:
+  rPlaceHolder:
+
+Outputs:
+  oPlaceHolder:
+    Description: PlaceHolder
+    Value: !Ref rPlaceHolder
+    Export:
+      Name: !Sub ${AWS::StackName}-PlaceHolder
